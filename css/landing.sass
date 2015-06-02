@@ -1,0 +1,223 @@
+html, body
+  margin: 0
+  padding: 0
+  font-family: Raleway, sans-serif
+
+h1
+  color: #fff
+  text-transform: uppercase
+
+header
+  height: 100vh
+  background:
+    image: url(../images/fondo.jpg)
+    size: cover
+    position: center
+
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  text-align: center
+
+.anagr
+  background:
+    image: url("../images/anagr-largo.png")
+    size: cover
+    position: right
+  position: relative
+  float: left
+  width: 80%
+  height: 16rem
+  z-index: 1
+
+.logo
+  width: 27%
+  height: auto
+  position: fixed
+  top: 20px
+  left: 20px
+  z-index: 999
+
+.container
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  background-color: $accent-color
+
+  .page
+    line-height: 1.7rem
+    width: 100%
+    height: 100vh
+    font-size: 1.2rem
+    position: relative
+
+.footer
+  width: 100%
+  position: fixed
+  bottom: 0
+  background-color: #000
+  z-index: 999
+  padding-top: 5px
+
+  h3, h1
+    display: inline
+    color: #fff
+    vertical-align: bottom
+    margin: 0.5rem
+
+  h3:after
+    @mixin clearfix
+
+  h1
+    float: right
+  
+.text-wrap
+  width: 50%
+  margin: auto
+  margin-top: 9rem
+
+.anagr-services
+  background:
+    image: url("../images/anagr-dashed.png")
+    size: contain
+    position: right
+    repeat: no-repeat
+  margin: -9rem 40rem
+  width: 34rem
+  height: 21rem
+  z-index: 1
+
+.toggle
+  text-decoration: none
+  font-size: 30px
+  color: $primary-color
+  +transition()
+  +position(fixed, 20px 20px auto auto)
+  z-index: 2
+  cursor: pointer
+
+
+.sidebar
+  +position(fixed, 0px -180px 0px auto)
+  width: 120px
+  padding: 30px
+  background: #000
+  z-index: 55
+  
+  ul
+    list-style: none
+    margin: 0
+    padding: 0
+  
+  li
+    color: rgba(255,255,255,0.8)
+    margin: 0
+    margin-bottom: 1rem
+    -webkit-font-smoothing: antialiased
+    cursor: pointer
+
+  a
+    font-size: 1rem
+    text-decoration: none
+    color: rgba(255,255,255,0.8)
+
+    &:hover, &::selection
+      color: rgba(255,255,255,1)
+
+#sidebartoggler
+  display: none
+
+  &:checked + .container
+
+    .sidebar
+      right: 0px
+    
+    .toggle
+      right: 200px
+
+    .page-who
+      padding-right: 180px
+
+    .page-services
+      padding-right: 180px
+
+.map
+  margin-top: 5.5rem
+  width: 100%
+  height: 77%
+
+.form
+  background:
+    color: #fff
+  width: 37%
+  height: auto
+  position: absolute
+  top: 15rem
+  left: 10px
+  float: right
+  font-size: 0.6rem
+  font-weight: 900
+  text-align: center
+  box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px
+
+  .form-button
+    background:
+      color: $selection-color
+    font-size: 0.8rem
+    color: darken(#fff, 2%)
+    width: 100px
+    margin: 5px auto
+    display: block
+    cursor: pointer
+    height: 2rem
+    border: 3px solid $selection-color
+    
+    &:hover
+      @include animation(pulsate 1.2s linear infinite)
+
+    @keyframes pulsate
+      0%
+        color: #ddd 
+      50%
+        color: #fff
+        text-shadow: 0 0px 0 #444, 0 0 5px #ffd, 0 0 8px #fff
+      100%
+        color: #ddd
+
+
+    &:active
+      color: #fff
+      text-shadow: 0 -1px 0 #444, 0 0 5px #ffd, 0 0 8px #fff
+      box-shadow: 0 1px 0 #666, 0 1px 0 #444, 0 1px 1px rgba(0,0,0,0.9)
+      transform: translateX(1px)
+      animation: none
+
+  .form-title
+    text-transform: uppercase
+    font-size: 0.8rem
+    font-weight: 900
+    color: $selection-color
+    margin: 0.5rem auto
+
+  .form-list
+    padding: 0
+    margin-top: 0
+
+  li
+    list-style: none
+    margin-bottom: 5px
+
+    input
+      width: 80%
+      height: 2rem 
+      padding-left: 1rem
+
+footer
+  background-color: #000
+  color: #555
+  font-weight: 100
+  height: 1rem
+  padding: 0rem 1rem 4rem 1rem
+  margin-top: -4rem
