@@ -5,6 +5,12 @@ $bg-color: #000
 $link-color: $accent-color
 $selection-color: #009ce9
 
+@mixin transition($args...) 
+  -webkit-transition: $args
+  -moz-transition: $args
+  -ms-transition: $args
+  -o-transition: $args
+  transition: $args
 
 //Media Queries
 $break-small: 500px

@@ -1,24 +1,28 @@
 /*
-Error: Undefined variable: "$accent-color".
-        on line 47 of C:\Users\Iris\Documents\GitHub\landing-page\css\landing.sass
+Error: Undefined mixin 'transition'.
+        on line 99 of D:\web\ProyectosWEB\airejolu\airejolu\css\landing.sass, in `transition'
+        from line 99 of D:\web\ProyectosWEB\airejolu\airejolu\css\landing.sass
 
-42: .container
-43:   display: flex
-44:   flex-direction: column
-45:   justify-content: center
-46:   align-items: center
-47:   background-color: $accent-color
-48: 
-49:   .page
-50:     line-height: 1.7rem
-51:     width: 100%
-52:     height: 100vh
+94: 
+95: .toggle
+96:   text-decoration: none
+97:   font-size: 30px
+98:   color: $primary-color
+99:   +transition()
+100:   +position(fixed, 20px 20px auto auto)
+101:   z-index: 2
+102:   cursor: pointer
+103: 
+104: 
 
 Backtrace:
-C:\Users\Iris\Documents\GitHub\landing-page\css\landing.sass:47
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
+D:\web\ProyectosWEB\airejolu\airejolu\css\landing.sass:99:in `transition'
+D:\web\ProyectosWEB\airejolu\airejolu\css\landing.sass:99
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:98:in `with_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:336:in `visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
@@ -62,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$accent-color\".\A         on line 47 of C:\Users\Iris\Documents\GitHub\landing-page\css\landing.sass\A \A 42: .container\A 43:   display: flex\A 44:   flex-direction: column\A 45:   justify-content: center\A 46:   align-items: center\A 47:   background-color: $accent-color\A 48: \A 49:   .page\A 50:     line-height: 1.7rem\A 51:     width: 100%\A 52:     height: 100vh"; }
+  content: "Error: Undefined mixin 'transition'.\A         on line 99 of D:\web\ProyectosWEB\airejolu\airejolu\css\landing.sass, in `transition'\A         from line 99 of D:\web\ProyectosWEB\airejolu\airejolu\css\landing.sass\A \A 94: \A 95: .toggle\A 96:   text-decoration: none\A 97:   font-size: 30px\A 98:   color: $primary-color\A 99:   +transition()\A 100:   +position(fixed, 20px 20px auto auto)\A 101:   z-index: 2\A 102:   cursor: pointer\A 103: \A 104: "; }
