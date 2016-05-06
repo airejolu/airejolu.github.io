@@ -1,16 +1,16 @@
 /*
 Error: Undefined variable: "$break-medium".
-        on line 1 of C:\Users\Iris\Documents\GitHub\landing-page\css\media.sass
+        on line 1 of D:\web\ProyectosWEB\airejolu\airejolu\css\media.sass
 
-1: @media screen and (max-width: $break-medium)
-2:   .container
-3:     .page-who, .page-services
-4:       height: auto
-5: 
-6:       p, li
+1: @media only screen and (max-device-width: $break-medium)
+2: 
+3:   .container
+4:     .page-who, .page-services
+5:       height: auto
+6: 
 
 Backtrace:
-C:\Users\Iris\Documents\GitHub\landing-page\css\media.sass:1
+D:\web\ProyectosWEB\airejolu\airejolu\css\media.sass:1
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:526:in `block in run_interp_no_strip'
@@ -50,4 +50,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$break-medium\".\A         on line 1 of C:\Users\Iris\Documents\GitHub\landing-page\css\media.sass\A \A 1: @media screen and (max-width: $break-medium)\A 2:   .container\A 3:     .page-who, .page-services\A 4:       height: auto\A 5: \A 6:       p, li"; }
+  content: "Error: Undefined variable: \"$break-medium\".\A         on line 1 of D:\web\ProyectosWEB\airejolu\airejolu\css\media.sass\A \A 1: @media only screen and (max-device-width: $break-medium)\A 2: \A 3:   .container\A 4:     .page-who, .page-services\A 5:       height: auto\A 6: "; }
